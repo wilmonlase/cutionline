@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-md-6 col-md-offset-2">
       <form method="post">  
-        <h1 class="text-center">Pengajuan Cuti Besar</h1>
+        <h1 class="text-center">Pengajuan Cuti Sakit</h1>
         <hr>
         <p>Yang mengajukan permohonan cuti tahunan dibawah ini:</p>
         <div class="form-group">
@@ -32,23 +32,23 @@
             <option>Luar Negeri</option> 
           </select>
         </div>
-        <div class="form-group">
+          <div class="form-group">
           <label><b>Lama Cuti (hari kerja)</b></label>
           <input type="text" name="lama_cuti" required class="form-control" placeholder="Masukkan lama cuti berupa angka , mis : 3,4,5 dst.">
         </div>
-        <div class="form-group">
+          <div class="form-group">
           <label><b>Tujuan Cuti (Hanya diisi apabila memilih jenis cuti luar negeri. Isi dengan nama negara tujuan)</b></label>
           <input type="text" name="lama_cuti" required class="form-control" >
         </div>
-        <div class="form-group">
+         <div class="form-group">
           <label><b>Mulai Tanggal</b></label>
           <input type="date" class="form-control" name="mulai_tanggal" value="<?php echo date("Y-m-d") ?>" required> 
         </div>
-        <div class="form-group">
+         <div class="form-group">
           <label><b>s/d tanggal</b></label>
           <input type="date" class="form-control" name="s/d_tanggal" value="<?php echo date("Y-m-d") ?>" required> 
         </div>
-        <div class="form-group">
+         <div class="form-group">
           <label><b>Selama menjalankan cuti alamat saya adalah di :</b></label>
           <textarea rows="5" cols="78" type="text" name="alamat" required class="form-control" placeholder="Isi alamat anda menetap selama anda menjalankan cuti..."></textarea>
         </div>
@@ -57,9 +57,7 @@
 
         <hr>
 
-        <!-- <button name="daftar" class="btn btn-block btn-primary" ><i class="fa fa-telegram"></i>Ajukan Permohonan</button> -->
-        <button class="btn btn-primary pull-right" name="daftar"><i class="fa fa-telegram"></i>Ajukan Permohonan</button>  
-        <a class="btn btn-default pull-left" href="index.php?halaman=halaman_utama">Kembali</a>
+        <button name="daftar" class="btn btn-block btn-primary" ><i class="fa fa-telegram"></i>Ajukan Permohonan</button>
         <br>
       </form>
 
