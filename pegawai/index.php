@@ -1,12 +1,12 @@
 <?php
-//include '../config/koneksi.php';
-//if (!isset($_SESSION['admin']) or empty($_SESSION["admin"]))
-//{
-  //  echo "<script>alert('Anda harus login');</script>";
-    //echo "<script>location='login.php';</script>";
-    //header('location:login.php');
-    //exit();
-//}      
+// include '../config/koneksi.php';
+// if (!isset($_SESSION['admin']) or empty($_SESSION["admin"]))
+// {
+//     echo "<script>alert('Anda harus login');</script>";
+//     echo "<script>location='login.php';</script>";
+//     header('location:login.php');
+//     exit();
+// }      
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">

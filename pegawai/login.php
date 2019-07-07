@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 include '../config/koneksi.php';
 ?>
 
@@ -58,18 +58,21 @@ include '../config/koneksi.php';
             <button class="btn btn-block btn-primary" name="masuk">Masuk</button>
           </form>
 
-$result = pg_query($koneksi, "SELECT nama FROM tbl_pegawai");
-while ($pecah = pg_fetch_assoc($result)){
-   echo $pecah['nama'];
-
           <?php
           if (isset($_POST['masuk']))
           {
-            $result = pg_query($koneksi, "SELECT * FROM spg_pegawai WHERE nip='$_POST[user]' AND tanggal_lahir='$_POST[pass]'");
-              $yangcocok = $ambil->num_rows;
+            $pas = hash($_POST['pass']);
+             // $pas = $_POST['pass'];
+
+            $result = pg_query($koneksi2, "SELECT * FROM master_user WHERE user_id='$_POST[user]' AND user_password='$pas'");
+
+              echo $result, $pas;
+
+              $yangcocok = $result->num_rows;
+
               if ($yangcocok==1)
               {
-                $akun = $ambil->pg_fetch_assoc();
+                $akun = $result->pg_fetch_assoc();
                 if ($akun['hak_akses']=="Admin")
                 {
                   $_SESSION['admin']=$akun;
@@ -80,7 +83,7 @@ while ($pecah = pg_fetch_assoc($result)){
               else
                {
                 echo "<div class='alert alert-danger'>Login Gagal</div>";
-                echo "<meta http-equiv='refresh' content='1;url=login.php'>";
+                // echo "<meta http-equiv='refresh' content='1;url=login.php'>";
                } 
           }
           ?>
