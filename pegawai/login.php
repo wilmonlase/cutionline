@@ -59,32 +59,35 @@ include '../config/koneksi.php';
           </form>
 
           <?php
+          require_once "../config/koneksi.php";
           if (isset($_POST['masuk']))
           {
-            $pas = hash($_POST['pass']);
-             // $pas = $_POST['pass'];
+            $username = $_POST['user'];
+            $userpass = $_POST['pass'];
 
-            $result = pg_query($koneksi2, "SELECT * FROM master_user WHERE user_id='$_POST[user]' AND user_password='$pas'");
+            $sql = pg_query($koneksiUser, "SELECT user_id, user_password FROM master_user WHERE user_id = '$username'");
 
-              echo $result, $pas;
+            list($username, $password) = pg_fetch_array($sql);
 
-              $yangcocok = $result->num_rows;
-
-              if ($yangcocok==1)
-              {
-                $akun = $result->pg_fetch_assoc();
-                if ($akun['hak_akses']=="Admin")
-                {
-                  $_SESSION['admin']=$akun;
-                  echo "<div class='alert alert-info'>Login Sukses</div>";
-                  echo "<meta http-equiv='refresh' content='1;url=index.php'>";
+            if (pg_num_rows($sql) > 0) {
+                if (password_verify($userpass, $password)) {
+                    session_start();
+                    $_SESSION['username'] = $username;
+                    $_SESSION['nama']     = $nama;
+                    header("location: index.php");
+                    die();
+                } else {
+                    echo '<script language="javascript">
+                            window.alert("LOGIN GAGAL! Silakan coba lagi");
+                            window.location.href="../pegawai/login.php";
+                          </script>';
                 }
-              }
-              else
-               {
-                echo "<div class='alert alert-danger'>Login Gagal</div>";
-                // echo "<meta http-equiv='refresh' content='1;url=login.php'>";
-               } 
+            } else {
+               echo '<script language="javascript">
+                        window.alert("LOGIN GAGAL! Silakan coba lagi");
+                        window.location.href="../pegawai/login.php";
+                     </script>';
+            }
           }
           ?>
         </div>
