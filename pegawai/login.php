@@ -39,8 +39,8 @@ include '../config/koneksi.php';
       <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
         <div class="panel panel-default">
           <div class="panel-heading">
-          <div id="tengah">
-            <strong>   Input Data User Anda </strong> 
+            <div id="tengah">
+              <strong>   Input Data User Anda </strong> 
             </div> 
           </div>
           <div class="panel-body">
@@ -54,7 +54,7 @@ include '../config/koneksi.php';
               <span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
               <input type="password" class="form-control"  name="pass" placeholder="Password" />
             </div>
-          
+            
             <button class="btn btn-block btn-primary" name="masuk">Masuk</button>
           </form>
 
@@ -70,33 +70,33 @@ include '../config/koneksi.php';
             list($username, $password) = pg_fetch_array($sql);
 
             if (pg_num_rows($sql) > 0) {
-                if (password_verify($userpass, $password)) {
-                    session_start();
-                    $_SESSION['username'] = $username;
-                    $_SESSION['nama']     = $nama;
-                    header("location: index.php");
-                    die();
-                } else {
-                    echo '<script language="javascript">
-                            window.alert("LOGIN GAGAL! Silakan coba lagi");
-                            window.location.href="../pegawai/login.php";
-                          </script>';
-                }
+              if (password_verify($userpass, $password)) {
+                session_start();
+                $_SESSION['username'] = $username;
+                $_SESSION['nama']     = $nama;
+                header("location: index.php");
+                die();
+              } else {
+                echo '<script language="javascript">
+                window.alert("LOGIN GAGAL! Silakan coba lagi");
+                window.location.href="../pegawai/login.php";
+                </script>';
+              }
             } else {
-               echo '<script language="javascript">
-                        window.alert("LOGIN GAGAL! Silakan coba lagi");
-                        window.location.href="../pegawai/login.php";
-                     </script>';
-            }
-          }
-          ?>
-        </div>
+             echo '<script language="javascript">
+             window.alert("LOGIN GAGAL! Silakan coba lagi");
+             window.location.href="../pegawai/login.php";
+             </script>';
+           }
+         }
+         ?>
+       </div>
 
-      </div>
-    </div>
+     </div>
+   </div>
 
 
-  </div>
+ </div>
 </div>
 
 

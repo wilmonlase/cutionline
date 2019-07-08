@@ -59,7 +59,7 @@
                     <li><a href="index.php"><i class="fa fa-home"></i> Halaman Utama </a></li>
                     <li><a href="index.php?halaman=profil_saya"><i class="fa fa-user"></i> Profil Saya </a></li>
                     <li>
-                        <a href="index.php?halaman=master"><i class="fa fa-list-alt"></i> Pengajuan Cuti Saya <span class="fa arrow"></span></a>
+                        <a href="index.php?halaman=master"><i class="fa fa-list-alt"></i> Lihat Pengajuan Cuti Saya <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
                                 <a href="index.php?halaman=data_user">Cuti Persalinan Anak</a>
@@ -80,7 +80,30 @@
                                 <a href="index.php?halaman=data_user">Cuti Sakit</a>
                             </li>
                         </ul>
-                    </li> 
+                    </li>
+                    <li>
+                        <a href="index.php?halaman=master"><i class="fa fa-check"></i> Acc Pengajuan Pegawai <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="index.php?halaman=data_user">Cuti Persalinan Anak</a>
+                            </li>
+                            <li>
+                                <a href="index.php?halaman=data_user">Cuti Alasan Penting</a>
+                            </li>
+                            <li>
+                                <a href="index.php?halaman=data_user">Cuti Besar</a>
+                            </li>
+                            <li>
+                                <a href="index.php?halaman=acc_cuti_tahunan">Cuti Tahunan</a>
+                            </li>
+                            <li>
+                                <a href="index.php?halaman=data_user">Tugas Belajar</a>
+                            </li>
+                            <li>
+                                <a href="index.php?halaman=data_user">Cuti Sakit</a>
+                            </li>
+                        </ul>
+                    </li>  
                     <li><a href="index.php?halaman=keluar"><i class="fa fa-sign-out"></i> Keluar </a></li>
 
                 </ul>
@@ -146,6 +169,10 @@
                      elseif ($_GET["halaman"]=="profil_saya")
                     {
                         include 'profil_saya.php';
+                    }
+                    elseif ($_GET["halaman"]=="acc_cuti_tahunan")
+                    {
+                        include 'acc_cuti_tahunan.php';
                     }
                 }
                 else
