@@ -57,7 +57,7 @@
 
 
                     <li><a href="index.php"><i class="fa fa-home"></i> Halaman Utama </a></li>
-                    <li><a href="data_pegawai.php"><i class="fa fa-user"></i> Profil Saya </a></li>
+                    <li><a href="index.php?halaman=profil_saya"><i class="fa fa-user"></i> Profil Saya </a></li>
                     <li>
                         <a href="index.php?halaman=master"><i class="fa fa-list-alt"></i> Pengajuan Cuti Saya <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
@@ -142,6 +142,10 @@
                     elseif ($_GET["halaman"]=="data_pegawai")
                     {
                         include 'data_pegawai.php';
+                    }
+                     elseif ($_GET["halaman"]=="profil_saya")
+                    {
+                        include 'profil_saya.php';
                     }
                 }
                 else
