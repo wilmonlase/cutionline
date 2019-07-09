@@ -121,7 +121,7 @@
         <tr>
             <th>Progress</th>
             <th>NIP</th>
-            <th>Nama Pejabat Terkait</th>
+            <th>Nama</th>
             <th>Status ACC</th>
             <th>Alasan</th>
             <th>Tanggal Aksi</th>  
