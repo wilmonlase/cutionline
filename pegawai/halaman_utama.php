@@ -112,12 +112,12 @@
 							<div class="panel panel-primary">
 								<div class="panel-heading">
 									<div class="row">
-										<div class="col-xs-3">
-											<i class="fa fa-book fa-2x"></i>
-										</div>
 										<div class="col-xs-9 text-left">
 											<div class="huge"></div>
 											<div><h6><strong>Tugas Belajar</strong></h6></div>
+										</div>
+										<div class="col-xs-3">
+											<i class="fa fa-book fa-2x"></i>
 										</div>
 									</div>
 								</div>

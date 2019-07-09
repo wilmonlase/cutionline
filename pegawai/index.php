@@ -25,6 +25,7 @@
   <!-- GOOGLE FONTS-->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
   <link rel="stylesheet" href="assets/css/print.css" media="print">
+
 </head>
 <script>
     function printPage() {
@@ -85,22 +86,22 @@
                         <a href="index.php?halaman=master"><i class="fa fa-check"></i> Acc Pengajuan Pegawai <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="index.php?halaman=data_user">Cuti Persalinan Anak</a>
+                                <a href="index.php?halaman=acc_cuti_persalinan_anak">Cuti Persalinan Anak</a>
                             </li>
                             <li>
-                                <a href="index.php?halaman=data_user">Cuti Alasan Penting</a>
+                                <a href="index.php?halaman=acc_cuti_alasan_penting">Cuti Alasan Penting</a>
                             </li>
                             <li>
-                                <a href="index.php?halaman=data_user">Cuti Besar</a>
+                                <a href="index.php?halaman=acc_cuti_besar">Cuti Besar</a>
                             </li>
                             <li>
                                 <a href="index.php?halaman=acc_cuti_tahunan">Cuti Tahunan</a>
                             </li>
                             <li>
-                                <a href="index.php?halaman=data_user">Tugas Belajar</a>
+                                <a href="index.php?halaman=acc_tugas_belajar">Tugas Belajar</a>
                             </li>
                             <li>
-                                <a href="index.php?halaman=data_user">Cuti Sakit</a>
+                                <a href="index.php?halaman=acc_cuti_sakit">Cuti Sakit</a>
                             </li>
                         </ul>
                     </li>  
@@ -173,6 +174,30 @@
                     elseif ($_GET["halaman"]=="acc_cuti_tahunan")
                     {
                         include 'acc_cuti_tahunan.php';
+                    }
+                    elseif ($_GET["halaman"]=="detail_acc_tahunan")
+                    {
+                        include 'detail_acc_tahunan.php';
+                    }
+                    elseif ($_GET["halaman"]=="acc_cuti_sakit")
+                    {
+                        include 'acc_cuti_sakit.php';
+                    }
+                    elseif ($_GET["halaman"]=="acc_cuti_besar")
+                    {
+                        include 'acc_cuti_besar.php';
+                    }
+                     elseif ($_GET["halaman"]=="acc_cuti_alasan_penting")
+                    {
+                        include 'acc_cuti_alasan_penting.php';
+                    }
+                      elseif ($_GET["halaman"]=="acc_cuti_persalinan_anak")
+                    {
+                        include 'acc_cuti_persalinan_anak.php';
+                    }
+                      elseif ($_GET["halaman"]=="acc_tugas_belajar")
+                    {
+                        include 'acc_tugas_belajar.php';
                     }
                 }
                 else

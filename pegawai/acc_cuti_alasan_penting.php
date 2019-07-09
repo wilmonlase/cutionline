@@ -1,5 +1,4 @@
-
-<h2>ACC Pengajuan Cuti Tahunan</h2>
+<h2>ACC Pengajuan Cuti Alasan Penting</h2>
 <hr>
 <table class="table table-bordered" id="tabelku">
     <thead>
@@ -28,7 +27,7 @@
         <td>-</td>
         <td>-</td>
         <td>
-          <a href="index.php?halaman=detail_acc_tahunan" class="glyphicon glyphicon-eye-open"></a>
+          <a href="index.php?halaman=detail_acc_tahunan" class="glyphicon glyphicon-eye-open" data-toggle="tooltip" title="lihat detail"></a>
         </td>
       </tr>
     </tbody>

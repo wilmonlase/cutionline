@@ -1,5 +1,4 @@
-
-<h2>ACC Pengajuan Cuti Tahunan</h2>
+<h2>ACC Pengajuan Cuti Persalinan Anak</h2>
 <hr>
 <table class="table table-bordered" id="tabelku">
     <thead>
