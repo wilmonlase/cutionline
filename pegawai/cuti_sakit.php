@@ -50,8 +50,8 @@
           <input type="date" class="form-control" name="s/d_tanggal" value="<?php echo date("Y-m-d") ?>" required> 
         </div>
         <div class="form-group">
-          <label><b>Selama menjalankan cuti alamat saya adalah di :</b></label>
-          <textarea rows="5" cols="78" type="text" name="alamat" required class="form-control" placeholder="Isi alamat anda menetap selama anda menjalankan cuti..."></textarea>
+          <label for="exampleFormControlTextarea1">Alamat Selama Cuti</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
         <div class="form-group">
           <label>Unggah Lampiran</label>

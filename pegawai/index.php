@@ -218,6 +218,9 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- METISMENU SCRIPTS -->
     <script src="assets/js/jquery.metisMenu.js"></script>
+    <!-- POPPER SCRIPTS -->
+    <script src="assets/js/popper.min.js"></script>
+
     <!-- MORRIS CHART SCRIPTS -->
     <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/custom.js"></script>

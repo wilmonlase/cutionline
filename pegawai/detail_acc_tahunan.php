@@ -107,7 +107,7 @@
         </div>
         <div class="col-md-4">
             <div class="form-group">
-                <textarea rows="3" cols="37" type="text" name="alamat" data-toggle="tooltip" data-placement="top" title="Alamat Selama Cuti" readonly></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" readonly></textarea>
             </div>
         </div>
 
