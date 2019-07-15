@@ -125,7 +125,8 @@
             <th>Nama</th>
             <th>Status ACC</th>
             <th>Alasan</th>
-            <th>Tanggal Aksi</th>  
+            <th>Tanggal Aksi</th>
+            <th>Keterangan</th>  
         </tr>
     </thead>
     <tbody>
@@ -136,25 +137,12 @@
             <td>-</td>
             <td>-</td>
             <td>-</td>
+            <td>-</td>
         </tr>
     </tbody>
 </table>
 
-<p>Beri Aksi</p>
-
-<div class="form-group">
-    <label>Aksi</label>
-    <select class="form-control" name="aksi">
-        <option value="diterima">Di-acc / Diterima</option>
-        <option value="ditolak">Ditolak</option>
-    </select>
-</div>
-
-<p>Ini alasan pertimbangan Anda didalam menolak/menyetujui pengajuan cuti ybs ...</p>
-
-<div class="form-group">
-    <textarea rows="5" cols="37" class="form-control" name="alasan" required="required"></textarea>
-</div>
-
-<button class="btn btn-primary pull-right" name="submit"> Simpan Aksi Tindakan <i class="glyphicon glyphicon-send"></i></button>  
-<a class="btn btn-default pull-left" href="index.php?halaman=acc_cuti_tahunan">Kembali</a>
+<p>Lampiran</p>
+<br>
+ 
+<a class="btn btn-default pull-left" href="index.php?halaman=riwayat_cuti_alasan_penting">Kembali</a>

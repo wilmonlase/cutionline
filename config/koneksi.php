@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 // //$koneksi = new mysqli("localhost","root","","nomor_batch");
 
 

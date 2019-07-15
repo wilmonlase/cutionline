@@ -63,22 +63,22 @@
                         <a href="index.php?halaman=master"><i class="fa fa-list-alt"></i> Lihat Pengajuan Cuti Saya <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="index.php?halaman=data_user">Cuti Persalinan Anak</a>
+                                <a href="index.php?halaman=riwayat_cuti_persalinan_anak">Cuti Persalinan Anak</a>
                             </li>
                             <li>
-                                <a href="index.php?halaman=data_user">Cuti Alasan Penting</a>
+                                <a href="index.php?halaman=riwayat_cuti_alasan_penting">Cuti Alasan Penting</a>
                             </li>
                             <li>
-                                <a href="index.php?halaman=data_user">Cuti Besar</a>
+                                <a href="index.php?halaman=riwayat_cuti_besar">Cuti Besar</a>
                             </li>
                             <li>
-                                <a href="index.php?halaman=data_user">Cuti Tahunan</a>
+                                <a href="index.php?halaman=riwayat_cuti_tahunan">Cuti Tahunan</a>
                             </li>
                             <li>
-                                <a href="index.php?halaman=data_user">Tugas Belajar</a>
+                                <a href="index.php?halaman=riwayat_cuti_tugas_belajar">Cuti Tugas Belajar</a>
                             </li>
                             <li>
-                                <a href="index.php?halaman=data_user">Cuti Sakit</a>
+                                <a href="index.php?halaman=riwayat_cuti_sakit">Cuti Sakit</a>
                             </li>
                         </ul>
                     </li>
@@ -159,9 +159,9 @@
                     {
                         include 'cuti_alasan_penting.php';
                     }
-                    elseif ($_GET["halaman"]=="tugas_belajar")
+                    elseif ($_GET["halaman"]=="cuti_tugas_belajar")
                     {
-                        include 'tugas_belajar.php';
+                        include 'cuti_tugas_belajar.php';
                     }
                     elseif ($_GET["halaman"]=="data_pegawai")
                     {
@@ -199,6 +199,55 @@
                     {
                         include 'acc_tugas_belajar.php';
                     }
+                    elseif ($_GET["halaman"]=="lihat_cuti_besar")
+                    {
+                        include 'lihat_cuti_besar.php';
+                    }
+                     elseif ($_GET["halaman"]=="riwayat_cuti_besar")
+                    {
+                        include 'riwayat_cuti_besar.php';
+                    }
+                     elseif ($_GET["halaman"]=="riwayat_cuti_alasan_penting")
+                    {
+                        include 'riwayat_cuti_alasan_penting.php';
+                    }
+                     elseif ($_GET["halaman"]=="lihat_cuti_alasan_penting")
+                    {
+                        include 'lihat_cuti_alasan_penting.php';
+                    }
+                     elseif ($_GET["halaman"]=="riwayat_cuti_persalinan_anak")
+                    {
+                        include 'riwayat_cuti_persalinan_anak.php';
+                    }
+                      elseif ($_GET["halaman"]=="lihat_cuti_persalinan_anak")
+                    {
+                        include 'lihat_cuti_persalinan_anak.php';
+                    }
+                      elseif ($_GET["halaman"]=="riwayat_cuti_sakit")
+                    {
+                        include 'riwayat_cuti_sakit.php';
+                    }
+                      elseif ($_GET["halaman"]=="lihat_cuti_sakit")
+                    {
+                        include 'lihat_cuti_sakit.php';
+                    }
+                      elseif ($_GET["halaman"]=="riwayat_cuti_tahunan")
+                    {
+                        include 'riwayat_cuti_tahunan.php';
+                    }
+                      elseif ($_GET["halaman"]=="lihat_cuti_tahunan")
+                    {
+                        include 'lihat_cuti_tahunan.php';
+                    }
+                     elseif ($_GET["halaman"]=="riwayat_cuti_tugas_belajar")
+                    {
+                        include 'riwayat_cuti_tugas_belajar.php';
+                    }
+                      elseif ($_GET["halaman"]=="lihat_cuti_tugas_belajar")
+                    {
+                        include 'lihat_cuti_tugas_belajar.php';
+                    }
+
                 }
                 else
                 {

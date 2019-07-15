@@ -18,7 +18,7 @@
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<div id="tengah">
-					<h3><b>PILIHAN JENIS CUTI</b></h5> 
+					<h4><b>PILIHAN JENIS CUTI</b></h4> 
 					</div> 
 					<hr>
 
@@ -27,12 +27,12 @@
 							<div class="panel panel-info">
 								<div class="panel-heading">
 									<div class="row">
-										<div class="col-xs-3">
-											<i class="fa fa-car fa-4x"></i>
-										</div>
-										<div class="col-xs-9 text-right">
+										<div class="col-xs-8 text-left">
 											<div class="huge"></div>
 											<div>Cuti Tahunan</div>
+										</div>
+										<div class="col-xs-3">
+											<i class="fa fa-car fa-3x"></i>
 										</div>
 									</div>
 								</div>
@@ -84,12 +84,12 @@
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<div class="row">
-									<div class="col-xs-3">
-										<i class="fa fa-plane fa-4x"></i>
-									</div>
-									<div class="col-xs-9 text-right">
+									<div class="col-xs-8 text-left">
 										<div class="huge"></div>
 										<div>Cuti Besar</div>
+									</div>
+									<div class="col-xs-3">
+										<i class="fa fa-plane fa-3x"></i>
 									</div>
 								</div>
 							</div>
@@ -106,12 +106,12 @@
 						<div class="panel panel-success">
 							<div class="panel-heading">
 								<div class="row">
-									<div class="col-xs-3">
-										<i class="fa fa-medkit fa-4x"></i>
-									</div>
-									<div class="col-xs-9 text-right">
+									<div class="col-xs-8 text-left">
 										<div class="huge"></div>
 										<div>Cuti Sakit</div>
+									</div>
+									<div class="col-xs-3">
+										<i class="fa fa-medkit fa-3x"></i>
 									</div>
 								</div>
 							</div>
@@ -128,12 +128,12 @@
 						<div class="panel panel-warning">
 							<div class="panel-heading">
 								<div class="row">
-									<div class="col-xs-3">
-										<i class="fa fa-female fa-4x"></i>
-									</div>
-									<div class="col-xs-9 text-right">
+									<div class="col-xs-8 text-left">
 										<div class="huge"></div>
 										<div>Cuti Melahirkan</div>
+									</div>
+									<div class="col-xs-3">
+										<i class="fa fa-female fa-3x"></i>
 									</div>
 								</div>
 							</div>
@@ -150,12 +150,13 @@
 						<div class="panel panel-danger">
 							<div class="panel-heading">
 								<div class="row">
-									<div class="col-xs-3">
-										<i class="fa fa-warning fa-4x"></i>
-									</div>
-									<div class="col-xs-9 text-right">
+									
+									<div class="col-xs-8 text-left">
 										<div class="huge"></div>
 										<div>Cuti Alasan Penting</div>
+									</div>
+									<div class="col-xs-2">
+										<i class="fa fa-warning fa-3x"></i>
 									</div>
 								</div>
 							</div>
@@ -172,12 +173,13 @@
 						<div class="panel panel-primary">
 							<div class="panel-heading">
 								<div class="row">
-									<div class="col-xs-3">
-										<i class="fa fa-book fa-4x"></i>
-									</div>
-									<div class="col-xs-9 text-right">
+									
+									<div class="col-xs-8 text-left">
 										<div class="huge"></div>
 										<div>Cuti Tugas Belajar</div>
+									</div>
+									<div class="col-xs-2">
+										<i class="fa fa-book fa-3x"></i>
 									</div>
 								</div>
 							</div>
@@ -217,7 +219,7 @@
 									<div class="modal-footer">
 
 
-										<a class="btn btn-info pull-right" href="index.php?halaman=cuti_sakit">Ajukan Permohonan <i class="glyphicon glyphicon-send"></i></a>
+										<a class="btn btn-info pull-right" href="index.php?halaman=tugas_belajar">Ajukan Permohonan <i class="glyphicon glyphicon-send"></i></a>
 										<button  class="btn btn-basic pull-left" type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
 									</div>
 
