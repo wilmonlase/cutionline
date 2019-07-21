@@ -12,7 +12,7 @@
 $koneksiPegawai = pg_connect("host=localhost port=5432 dbname=simpeg user=postgres password=qwerty");
 $koneksiUser = pg_connect("host=localhost port=5432 dbname=erk user=postgres password=qwerty");
 // $koneksi3 = pg_connect("host=localhost port=5432 dbname=dbcuti user=postgres password=qwerty");
-$koneksiDataCuti = new mysqli("localhost","root","","somasi_cuti");
+$koneksiDataCuti = new mysqli("localhost","root","","dbcutionline");
 
 
 // $koneksi = new PDO('pgsql:host=localhost;dbname=dbcuti', 'postgres', 'qwerty');

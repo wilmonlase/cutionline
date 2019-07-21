@@ -89,7 +89,50 @@ die();
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <?php
+                        $nip = $_SESSION["username"];
+                        require_once "../config/koneksi.php";
+                        $dataPegawais = pg_query($koneksiPegawai, "SELECT jabatan_id FROM spg_pegawai WHERE peg_nip = '$nip'");
+                        while ($row = pg_fetch_assoc($dataPegawais)) {
+                            $jabatanId = $row['jabatan_id'];
+                        }
+                        $struk = pg_query($koneksiPegawai, "SELECT jabatan_jenis FROM m_spg_jabatan WHERE jabatan_id = '$jabatanId'");
+                        while ($row = pg_fetch_assoc($struk)) {
+                            $jenisJabatan = $row['jabatan_jenis'];
+                        }
+                        $dataCuti = mysqli_query($koneksiDataCuti, "SELECT * FROM dbcuti WHERE nip_atasan='$nip' and status_cuti='1' ");
+                        
+                        $notif = mysqli_num_rows($dataCuti);
+
+                        if($jenisJabatan == '2'){
+                        ?>
+                            <li>
+                                <a href="index.php?halaman=master"><i class="fa fa-check"></i> Acc Pengajuan Pegawai <?php if($notif!=0){?> <span class="badge badge-danger"> <?php echo $notif; ?> </span> <?php } ?><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="index.php?halaman=acc_cuti_persalinan_anak">Cuti Persalinan Anak</a>
+                                    </li>
+                                    <li>
+                                        <a href="index.php?halaman=acc_cuti_alasan_penting">Cuti Alasan Penting</a>
+                                    </li>
+                                    <li>
+                                        <a href="index.php?halaman=acc_cuti_besar">Cuti Besar</a>
+                                    </li>
+                                    <li>
+                                        <a href="index.php?halaman=acc_cuti_tahunan">Cuti Tahunan</a>
+                                    </li>
+                                    <li>
+                                        <a href="index.php?halaman=acc_tugas_belajar">Tugas Belajar</a>
+                                    </li>
+                                    <li>
+                                        <a href="index.php?halaman=acc_cuti_sakit">Cuti Sakit</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        <?php 
+                        }
+                    ?>
+                    <!-- <li>
                         <a href="index.php?halaman=master"><i class="fa fa-check"></i> Acc Pengajuan Pegawai <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
@@ -111,7 +154,7 @@ die();
                                 <a href="index.php?halaman=acc_cuti_sakit">Cuti Sakit</a>
                             </li>
                         </ul>
-                    </li>  
+                    </li>   -->
                     <li><a href="index.php?halaman=keluar"><i class="fa fa-sign-out"></i> Keluar </a></li>
 
                 </ul>

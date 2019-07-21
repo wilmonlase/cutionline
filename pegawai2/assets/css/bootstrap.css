@@ -4621,6 +4621,10 @@ a.label:focus {
   background-color: #777;
   border-radius: 10px;
 }
+.badge-danger{
+  background-color: #cc1717;
+}
+
 .badge:empty {
   display: none;
 }
